@@ -50,7 +50,7 @@ def generate_prompts_llama(prompt,system):
 
 def generate_prompts_target(prompt,system):
     response = openai.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-4o",
         messages=[
           {"role": "system", "content": f"{system}"},
           {"role": "user", "content": f"""{prompt}"""}
